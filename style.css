@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.img_wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black
+}
+
+.img_wrapper img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -35%;
+    
+}
+
+.banner h1{
+    color:white;
+    font-size: 45px;
+    font-family: "Baloo Da 2",serif;
+    font-weight: 200;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1) ;
+    margin-bottom: 32px ;
+}
+
+.banner p{
+    color:white;
+    font-size: 30px;
+    font-family: "Josefin Slab", serif;
+    font-weight:600;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1) ;
+    margin-bottom: 32px ;
+}
+.banner button {
+    font-family: "Muli", serif;
+    color: black;
+    background: aqua;
+    text-transform: uppercase; 
+ 
+}
