@@ -26,6 +26,16 @@ header{
     height: 100vh;
     object-fit: cover;
     opacity: 0.5;
+    animation: zoom  10s; 
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .banner{
@@ -42,6 +52,9 @@ header{
     font-weight: 200;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1) ;
     margin-bottom: 32px ;
+    opacity: 0;
+    animation: moveBanner 7s forwards;
+
 }
 
 .banner p{
@@ -51,11 +64,34 @@ header{
     font-weight:600;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1) ;
     margin-bottom: 32px ;
+    animation: moveBanner 9s forwards;
 }
 .banner button {
     font-family: "Muli", serif;
     color: black;
-    background: aqua;
+    background: #232526;
+    background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-transform: uppercase; 
- 
+    letter-spacing: .1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: moveBanner 11s forwards;
 }
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(160px) rotateY(-30deg)
+    }
+    100%{
+        transform: translateY(0px) rotateY(0);
+        opacity: 1;
+    }
+
+}
+
